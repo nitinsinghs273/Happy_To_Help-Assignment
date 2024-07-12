@@ -1,0 +1,86 @@
+.player-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 30px 30px 0px 30px;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  margin: 150px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.active {
+  margin-left: 74%;
+}
+
+.player-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.player-image-container {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.player-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  margin-top: 2rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.player-image:hover {
+  transform: scale(1.2);
+}
+
+.player-name {
+  font-size: 1.2em;
+  margin: 15px 5px 10px 5px;
+}
+
+.player-position {
+  color: #888;
+  font-size: 1.2em;
+}
+
+.player-info {
+  margin-left: 30px;
+  flex-grow: 1;
+}
+
+.player-stats {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .player-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .player-name {
+    margin-top: 10px;
+  }
+}
